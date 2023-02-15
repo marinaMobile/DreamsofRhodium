@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dreams of Rhodium</string>
+    <string name="keyOne">kXp2s5v8x/A?D(G+KbPeShVmYq3t6w9z</string>
+    <string name="keyTwo">WmZq4t7w!z%C*F-JaNdRgUjXn2r5u8x/</string>
+    <string name="keyThree">dSgVkYp2s5v8y/B?E(H+MbQeThWmZq4t</string>
+    <string name="keyFour">7x!A%D*F-JaNdRgUkXp2s5v8y/B?E(H+</string>
+    <string name="keyFive">QfTjWnZr4u7x!A%D*G-KaPdSgUkXp2s5</string>
+    <string name="keySix">KaPdSgVkYp3s6v8y/B?E(H+MbQeThWmZ</string>
+    <string name="facebook_app_id">2153242641527247</string>
+    <string name="fb_login_protocol_scheme">fb2153242641527247</string>
+    <string name="facebook_client_token">d389204c54515116ff3e145b8001ed9d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
