@@ -77,7 +77,7 @@ class FifthFragment : Fragment() {
 
         when(apps) {
             "1" ->
-                if(appCamp!!.contains("tdb2")) {
+                if(appCamp != "null") {
                     shareP.edit().putString("link", linkApps).apply()
                     startActivity(intentBeam)
                     activity?.finish()
