@@ -65,7 +65,6 @@ dependencies {
     implementation "com.appsflyer:af-android-sdk:6.9.0"
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.android.gms:play-services-appset:16.0.2'
-
     //viewmodel
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'

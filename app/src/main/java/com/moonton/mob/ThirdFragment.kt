@@ -44,7 +44,6 @@ class ThirdFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         viewMainModel.mainId.observe(viewLifecycleOwner) {
             if (it != null) {
                 val main = it.toString()
@@ -67,5 +66,11 @@ class ThirdFragment : Fragment() {
                 findNavController().navigate(R.id.action_thirdFragment_to_fourthFragment)
             }
         }
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+
     }
 }

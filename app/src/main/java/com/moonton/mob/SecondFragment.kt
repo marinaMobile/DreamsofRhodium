@@ -32,9 +32,13 @@ class SecondFragment : Fragment() {
         mContext = context
     }
 
+    override fun onStart() {
+        super.onStart()
+
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         viewMainModel.countryCode.observe(viewLifecycleOwner) {
             if (it!=null) {
                 country = it.cou
@@ -42,5 +46,6 @@ class SecondFragment : Fragment() {
                 findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
             }
         }
+
     }
 }

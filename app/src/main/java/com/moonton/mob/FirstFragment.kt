@@ -32,8 +32,7 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewMainModel.fbDeee(mContext)
-
+//        viewMainModel.fbDeee(mContext)
         findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
 
     }
