@@ -1,4 +1,4 @@
-package com.moonton.mob
+package com.moonton.mob.asx
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,28 +8,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.moonton.mob.R
+import com.moonton.mob.xzoosidh.Xosowiusdhw
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.activityViewModel
 import org.koin.core.qualifier.named
 
-class SecondFragment : Fragment() {
+class Njisijxuhcgyds : Fragment() {
+    val sijwjid by activityViewModel<Xosowiusdhw>(named("MainModel"))
+    private lateinit var sdjisji: Context
+    lateinit var sdsdjisd: String
+    val cijvijxji: SharedPreferences by inject(named("SharedPreferences"))
 
-    private lateinit var mContext: Context
-    val shareP: SharedPreferences by inject(named("SharedPreferences"))
-    val viewMainModel by activityViewModel<ViModd>(named("MainModel"))
 
-    lateinit var country: String
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
+        return inflater.inflate(R.layout.fokkosdjiijzxc, container, false)
     }
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        mContext = context
+        sdjisji = context
     }
 
     override fun onStart() {
@@ -39,11 +41,11 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewMainModel.countryCode.observe(viewLifecycleOwner) {
+        sijwjid.sjsidiw.observe(viewLifecycleOwner) {
             if (it!=null) {
-                country = it.cou
-                shareP.edit().putString("country", country).apply()
-                findNavController().navigate(R.id.action_secondFragment_to_thirdFragment)
+                sdsdjisd = it.cou
+                cijvijxji.edit().putString("country", sdsdjisd).apply()
+                findNavController().navigate(R.id.cijvjijidsd)
             }
         }
 

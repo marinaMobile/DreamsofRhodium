@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/gamerMenu"
-        android:name="com.moonton.mob.novel.GamerMenu"
+        android:name="com.moonton.mob.gdfge.GamerMenu"
         android:label="fragment_gamer_menu"
         tools:layout="@layout/fragment_gamer_menu" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/playGame"
-        android:name="com.moonton.mob.novel.PlayGame"
+        android:name="com.moonton.mob.asx.Wpaplsokxcijs"
         android:label="fragment_play_game"
         tools:layout="@layout/fragment_play_game" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/rulesFrag"
-        android:name="com.moonton.mob.novel.RulesFrag"
+        android:name="com.moonton.mob.gdfge.RulesFrag"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules" >
         <action

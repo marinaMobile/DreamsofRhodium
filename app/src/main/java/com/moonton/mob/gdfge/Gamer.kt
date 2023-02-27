@@ -1,4 +1,6 @@
-package com.moonton.mob.novel
+package com.moonton.mob.gdfge
+
+import com.moonton.mob.xzoosidh.DataCard
 
 class Gamer (private val boardSize: BoardSize){
     val cards: List <DataCard>
@@ -8,7 +10,7 @@ class Gamer (private val boardSize: BoardSize){
     init{
         val chosenImages = DEFAULT_ICONS.shuffled().take(boardSize.getNumPairs())
         val randomizedImages = (chosenImages + chosenImages).shuffled()
-        cards =  randomizedImages.map {DataCard(it)}
+        cards =  randomizedImages.map { DataCard(it) }
     }
 
     fun flipperCard(position: Int): Boolean {

@@ -1,7 +1,6 @@
-package com.moonton.mob.novel
+package com.moonton.mob.gdfge
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +8,6 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.navigation.fragment.findNavController
 import com.moonton.mob.R
-import com.moonton.mob.databinding.FragmentGamerMenuBinding
 import com.moonton.mob.databinding.FragmentRulesBinding
 
 class RulesFrag : Fragment() {

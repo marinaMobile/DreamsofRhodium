@@ -1,4 +1,4 @@
-package com.moonton.mob.novel
+package com.moonton.mob.xzoosidh
 
 data class DataCard(val identifier: Int,
                 var isFaceUp: Boolean = false,

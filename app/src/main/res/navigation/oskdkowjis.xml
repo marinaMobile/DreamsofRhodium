@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_mother"
+    app:startDestination="@id/isjdjijiwoks">
+
+    <fragment
+        android:id="@+id/isjdjijiwoks"
+        android:name="com.moonton.mob.xzoosidh.Kioxooocijhucx"
+        android:label="cnvjxnvd"
+        tools:layout="@layout/kckxovjiduhf" >
+        <action
+            android:id="@+id/cjxjvdsijisdvjifhud"
+            app:destination="@id/ydiisjajiwsa" />
+    </fragment>
+    <fragment
+        android:id="@+id/ydiisjajiwsa"
+        android:name="com.moonton.mob.asx.Njisijxuhcgyds"
+        android:label="wplqlpqoskod"
+        tools:layout="@layout/fokkosdjiijzxc" >
+        <action
+            android:id="@+id/cijvjijidsd"
+            app:destination="@id/lllcooixixc" />
+    </fragment>
+    <fragment
+        android:id="@+id/lllcooixixc"
+        android:name="com.moonton.mob.sytwisjd.Opsosixjcsdds"
+        android:label="ggkokoeok"
+        tools:layout="@layout/dhywuiwisjad" >
+        <action
+            android:id="@+id/udijsokkosdwsa"
+            app:destination="@id/dokofkokodjisas" />
+    </fragment>
+    <fragment
+        android:id="@+id/dokofkokodjisas"
+        android:name="com.moonton.mob.sytwisjd.Ooslslioxicjs"
+        android:label="zppxokijcuhxd"
+        tools:layout="@layout/ssksdiwjs" >
+        <action
+            android:id="@+id/vokokoxcjijids"
+            app:destination="@id/dokekwlpsa" />
+    </fragment>
+    <fragment
+        android:id="@+id/dokekwlpsa"
+        android:name="com.moonton.mob.asx.Ewowkoksijx"
+        android:label="voooxocoijds"
+        tools:layout="@layout/ccxyctftfds" />
+</navigation>

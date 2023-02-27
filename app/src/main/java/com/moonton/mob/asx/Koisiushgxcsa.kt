@@ -1,4 +1,4 @@
-package com.moonton.mob.novel
+package com.moonton.mob.gdfge
 
 import com.moonton.mob.R
 

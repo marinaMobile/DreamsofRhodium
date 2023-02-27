@@ -1,11 +1,12 @@
-package com.moonton.mob
+package com.moonton.mob.sytwisjd
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.moonton.mob.R
 
-class RedirAct : AppCompatActivity() {
+class Nmmxkxkcuygds : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_redir)
+        setContentView(R.layout.kosdkowijs)
     }
 }

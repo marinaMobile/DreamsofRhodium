@@ -1,4 +1,4 @@
-package com.moonton.mob.novel
+package com.moonton.mob.gdfge
 
 enum class BoardSize(val numCards: Int) {
     EASY( 28) ;

@@ -3,6 +3,7 @@ package com.moonton.mob
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import com.moonton.mob.xzoosidh.Xosowiusdhw
 import com.squareup.moshi.Moshi
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -11,15 +12,15 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-val appModule = module {
-    single<HostInterface>(named("HostInter")) {
+val foplplpcxp = module {
+    single<Rwiiwjjisidijxc>(named("HostInter")) {
         get<Retrofit>(named("RetroDev"))
-            .create(HostInterface::class.java)
+            .create(Rwiiwjjisidijxc::class.java)
     }
 
-    single <ApiInterface> (named("ApiInter")) {
+    single <Foeokksoakodjix> (named("ApiInter")) {
         get<Retrofit>(named("RetroCountry"))
-            .create(ApiInterface::class.java)
+            .create(Foeokksoakodjix::class.java)
     }
     single<Retrofit>(named("RetroCountry")) {
         Retrofit.Builder()
@@ -34,33 +35,33 @@ val appModule = module {
             .build()
     }
     factory(named("DevRep")) {
-        DevRepo(get(named("HostInter")))
+        Rwpqlpqlpsplokxkoc(get(named("HostInter")))
     }
     factory (named("CountryRep")) {
-        CountryRepo(get(named("ApiInter")))
+        Xoowijsuuhxhcz(get(named("ApiInter")))
     }
 
     single {
-        provideMoshi()
+        jxjkcokxoz()
     }
     single(named("SharedPreferences")) {
-        provideSharedPref(androidApplication())
+        tcggxhv(androidApplication())
     }
 
 }
-fun provideSharedPref(app: Application): SharedPreferences {
-    return app.applicationContext.getSharedPreferences(
+fun tcggxhv(suisdjsd: Application): SharedPreferences {
+    return suisdjsd.applicationContext.getSharedPreferences(
         "SHARED_PREF",
         Context.MODE_PRIVATE
     )
 }
 
-fun provideMoshi(): Moshi {
+fun jxjkcokxoz(): Moshi {
     return Moshi.Builder().build()
 }
 
-val viewModelModule = module {
+val vpplblnvbpl = module {
     viewModel (named("MainModel")){
-        ViModd(get(named("CountryRep")), get(named("DevRep")), get(named("SharedPreferences")), get())
+        Xosowiusdhw(get(named("CountryRep")), get(named("DevRep")), get(named("SharedPreferences")), get())
     }
 }

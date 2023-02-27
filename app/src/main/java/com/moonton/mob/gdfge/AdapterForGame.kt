@@ -1,4 +1,4 @@
-package com.moonton.mob.novel
+package com.moonton.mob.gdfge
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.moonton.mob.R
+import com.moonton.mob.xzoosidh.DataCard
 import java.lang.Integer.min
 
 class AdapterForGame(val context: Context, val boardSize: BoardSize, val cards: List<DataCard>, val cardClickListener: CardClickListener): RecyclerView.Adapter<AdapterForGame.ViewHolder>() {

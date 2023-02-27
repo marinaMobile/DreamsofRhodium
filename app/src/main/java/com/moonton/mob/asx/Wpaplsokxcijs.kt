@@ -1,10 +1,9 @@
-package com.moonton.mob.novel
+package com.moonton.mob.asx
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,9 +15,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.moonton.mob.R
 import com.moonton.mob.databinding.FragmentPlayGameBinding
+import com.moonton.mob.gdfge.AdapterForGame
+import com.moonton.mob.gdfge.BoardSize
+import com.moonton.mob.gdfge.Gamer
 
 
-class PlayGame : Fragment() {
+class Wpaplsokxcijs : Fragment() {
     private lateinit var adapter: AdapterForGame
     private  lateinit var rvBoard: RecyclerView
     private lateinit var game: Gamer
@@ -80,7 +82,7 @@ class PlayGame : Fragment() {
 
         game = Gamer(boardSize)
 
-        adapter =  AdapterForGame(mContext, boardSize, game.cards, object : AdapterForGame.CardClickListener{
+        adapter =  AdapterForGame(mContext, boardSize, game.cards, object : AdapterForGame.CardClickListener {
             override fun onCardClicked(position: Int) {
                 updateGameWithFlip(position)
             }
