@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".novel.GamerMenu"
+    android:background="#036280">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gloock"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/dude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <Button
+        android:id="@+id/startGameBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#012E4A"
+        android:fontFamily="@font/pop"
+        android:text="Play"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <Button
+        android:id="@+id/rulesGameBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#012E4A"
+        android:fontFamily="@font/pop"
+        android:text="Rules"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startGameBtn" />
+
+
+    <Button
+        android:id="@+id/exitGameBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#012E4A"
+        android:fontFamily="@font/pop"
+        android:textColor="@color/white"
+        android:text="Exit"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rulesGameBtn" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

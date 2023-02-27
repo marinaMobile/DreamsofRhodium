@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_father"
+    app:startDestination="@id/gamerMenu">
+
+    <fragment
+        android:id="@+id/gamerMenu"
+        android:name="com.moonton.mob.novel.GamerMenu"
+        android:label="fragment_gamer_menu"
+        tools:layout="@layout/fragment_gamer_menu" >
+        <action
+            android:id="@+id/action_gamerMenu_to_playGame"
+            app:destination="@id/playGame" />
+        <action
+            android:id="@+id/action_gamerMenu_to_rulesFrag"
+            app:destination="@id/rulesFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/playGame"
+        android:name="com.moonton.mob.novel.PlayGame"
+        android:label="fragment_play_game"
+        tools:layout="@layout/fragment_play_game" >
+        <action
+            android:id="@+id/action_playGame_to_gamerMenu"
+            app:destination="@id/gamerMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFrag"
+        android:name="com.moonton.mob.novel.RulesFrag"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" >
+        <action
+            android:id="@+id/action_rulesFrag_to_gamerMenu"
+            app:destination="@id/gamerMenu" />
+    </fragment>
+</navigation>

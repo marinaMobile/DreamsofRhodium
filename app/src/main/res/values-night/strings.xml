@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rules">The rules are very simple. You have to find all pairs before the timer stops. Remember! You have only one chance to do it!</string>
+</resources>

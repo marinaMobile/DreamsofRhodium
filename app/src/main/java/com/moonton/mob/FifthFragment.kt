@@ -75,37 +75,30 @@ class FifthFragment : Fragment() {
         val linkFB = "$wv$subOne$deepSt&$one$afId&$ad_id$mainId&$subFour$pack&$subFive$buildVers&$subSix$trololo"
         val linkFBNullApps = "$wv$subOne$deepSt&$one$mainId&$ad_id$myInstId&$subFour$pack&$subFive$buildVers&$subSix$trololo"
 
-        Log.d("AdvertId", mainId.toString())
         when(apps) {
             "1" ->
                 if(appCamp != "null") {
                     shareP.edit().putString("link", linkApps).apply()
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     startActivity(intentBeam)
                     activity?.finish()
                 } else if (deepSt!=null||countryDev!!.contains(count.toString())) {
                     shareP.edit().putString("link", linkFB).apply()
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     startActivity(intentBeam)
                     activity?.finish()
                 } else {
                     startActivity(intentGame)
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     activity?.finish()
                 }
             "0" ->
                 if(deepSt!=null) {
                     shareP.edit().putString("link", linkFBNullApps).apply()
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     startActivity(intentBeam)
                     activity?.finish()
                 } else if (countryDev!!.contains(count.toString())) {
                     shareP.edit().putString("link", linkMT).apply()
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     startActivity(intentBeam)
                     activity?.finish()
                 } else {
-                    Toast.makeText(mContext, "$appCamp+$deepSt+$count", Toast.LENGTH_SHORT).show()
                     startActivity(intentGame)
                     activity?.finish()
                 }
@@ -165,6 +158,3 @@ class FifthFragment : Fragment() {
     }
 
     }
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//    }

@@ -34,11 +34,6 @@ class FourthFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_fourth, container, false)
     }
 
-//    override fun onStart() {
-//        super.onStart()
-//
-//
-//    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -28,11 +28,11 @@ class CountryRepo(private val countryApi: ApiInterface) {
 
 data class GeoDev(
     @JsonClass(generateAdapter = true)
-    @Json(name = "geo")
+    @field:Json(name = "shame")
     val geo: String,
-    @Json(name = "view")
+    @field:Json(name = "view")
     val view: String,
-    @Json(name = "appsChecker")
+    @field:Json(name = "appsChecker")
     val appsChecker: String
 )
 
